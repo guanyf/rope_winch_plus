@@ -1,0 +1,7 @@
+{
+  "block.rope_winch_plus.rope_winch_plus": "绳索绞盘plus",
+  "item.rope_winch_plus.rope_winch_plus": "绳索绞盘plus",
+  "itemGroup.rope_winch_plus": "航空学: 绳索绞盘plus",
+  "rope_winch_plus.retract_limit": "收绳上限",
+  "block.rope_winch_plus.rope_winch_plus.tooltip": "与原版绳索绞盘相同：接入动力网络，正转放绳、反转收绳。差异：① 绳索比较松弛（两端距离明显小于绳长）时自动停止放绳，但收绳始终有效——下放到位后无需人工关停，反转即可收绳；② 可设置收绳上限（0-64）：右键方块上/下两个面（非底座面、放绳面、应力面）打开设置，0=收绳到顶，N=到顶再多留N格。松弛阈值与新方块默认上限可在 config/rope_winch_plus-server.toml 中调整。"
+}

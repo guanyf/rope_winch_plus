@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IWI",
+    "IRI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_ingot" },
+    "W": { "item": "simulated:rope_winch" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": {
+    "item": "rope_winch_plus:rope_winch_plus"
+  }
+}

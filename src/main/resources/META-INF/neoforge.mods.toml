@@ -1,0 +1,52 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="rope_winch_plus"
+version="1.0.0"
+displayName="Rope Winch Plus (绳索绞盘plus)"
+authors="guan"
+description="Create Aeronautics 附属：绳索绞盘plus —— 与原版绳索绞盘功能一致，额外在绳索较松弛时自动停止继续放绳（收绳始终有效）。低耦合：仅复用航空学 MOD 公开的绳索绞盘 API，无搬运第三方代码。"
+
+# ---- 运行时依赖（modId 与版本区间均按用户 1.21.1 环境实测核实）----
+# 说明（低耦合）：
+#   - 直接 API 依赖只有 simulated（航空学/物理模拟，绳索绞盘类在其中）。
+#   - neoforge / create / sable 为 simulated 父类（KineticBlockEntity / SmartBlockEntity /
+#     RopePhysicsObject）的传递性运行时必需，本 MOD 代码不直接调用它们的能力。
+#   - aeronautics 为航空学 bundle（用户游戏内安装），与旧版一致保留，确保加载环境匹配。
+
+[[dependencies.rope_winch_plus]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.228,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rope_winch_plus]]
+modId="create"
+type="required"
+versionRange="[6.0.10,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rope_winch_plus]]
+modId="simulated"
+type="required"
+versionRange="[1.3.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rope_winch_plus]]
+modId="sable"
+type="required"
+versionRange="[2.0.0,3.0.0)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.rope_winch_plus]]
+modId="aeronautics"
+type="required"
+versionRange="[1.3.1,)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,7 @@
+{
+  "block.rope_winch_plus.rope_winch_plus": "Rope Winch Plus",
+  "item.rope_winch_plus.rope_winch_plus": "Rope Winch Plus",
+  "itemGroup.rope_winch_plus": "Aeronautics: Rope Winch Plus",
+  "rope_winch_plus.retract_limit": "Retract limit",
+  "block.rope_winch_plus.rope_winch_plus.tooltip": "Same as the vanilla rope winch: connect to a kinetic network, forward pays out rope, reverse reels it in. Differences: (1) when the rope gets slack (the straight-line distance between its ends drops well below the rope length), it automatically stops paying out, but reeling in always works; (2) a retract limit (0-64) can be set per winch — right-click the top/bottom faces (not the base, rope-out or stress faces) to open the settings, where 0 = reel all the way to the top and N = stop N blocks below that. Slack threshold and the default limit for newly placed winches are configurable in config/rope_winch_plus-server.toml."
+}

@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        // 本地镜像优先（离线/弱网时使用，放 C:/Users/guan/local-maven-repo）
+        maven {
+            name = 'LocalMirror'
+            url = uri('file:///C:/Users/guan/local-maven-repo')
+        }
+        gradlePluginPortal()
+        maven {
+            name = 'MinecraftForge'
+            url = uri('https://maven.minecraftforge.net/')
+        }
+        maven {
+            name = 'NeoForge'
+            url = uri('https://maven.neoforged.net/releases')
+        }
+    }
+}
+
+rootProject.name = 'rope_winch_plus'
